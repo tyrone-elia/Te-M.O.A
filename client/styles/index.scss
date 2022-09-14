@@ -1,0 +1,51 @@
+@import './variables.scss';
+@import './books.scss';
+
+body {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 20px;
+  background-color: $bg-main;
+  color: $text-colour;
+  font: 14px "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+  // @include mobile {
+  //   background-color: $bg-main;
+  //   color: $text-colour;
+  // }
+
+  @include desktop-large {
+    background-color: aliceblue;
+    color: black;
+  }
+}
+p {
+  font-size: smaller;
+  color: $text-colour;
+  
+  img {
+    height: 400px;
+  }
+}
+header {
+  background-color: $bg-dark-dark;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
+  width: 100%;
+  display: flex;
+  @include shadow();
+
+  a {
+    color: $text-colour;
+  }
+
+  
+}
+
+.main {
+  margin-top: 60px;
+}

@@ -1,0 +1,66 @@
+// Variables
+
+// ------
+// Colors
+// ------
+
+$bg-dark-dark: #1a1a1b;
+$bg-main: #363638;
+
+$highlight: #911EC8;
+$alt-highlight: #2BA0C5;
+
+$text-colour: #f2f2f2;
+
+// Fonts
+$font-basic: 'Courier', monospace;
+$font-headings: 'Rockwell', serif;
+
+// ------
+// Mixins
+// ------
+
+@mixin shadow() {
+  box-shadow: 0px 5px 5px #19191a;
+}
+
+@mixin underline() {
+  text-decoration-line: underline;
+  text-decoration-color: $alt-highlight;
+  text-decoration-thickness: 3px;
+}
+
+
+// ---------------
+//  Media Queries
+// ---------------
+
+@mixin mobile {
+  @media(min-width: 480px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin desktop-large {
+  @media (min-width: 1280px) {
+    @content;
+  }
+}
+
+@mixin desktop-xlarge {
+  @media (min-width: 1600px) {
+    @content;
+  }
+}

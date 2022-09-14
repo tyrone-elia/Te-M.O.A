@@ -1,0 +1,36 @@
+// BOOKS
+
+.books {
+  &__title {
+    font-size: xx-small;
+  }
+
+  &__grid {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+
+// BOOK
+
+.book {
+  margin: 5px;
+  background-color: $bg-dark-dark;
+  padding: 15px;
+  padding-top: 0px;
+  width: 140px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  @include shadow();
+
+  img {
+    max-width: 400px;
+  }
+
+  &__title {
+    @include underline();
+  }
+}
