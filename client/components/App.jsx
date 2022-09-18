@@ -2,6 +2,8 @@ import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 
 import AboutUs from './AboutUs'
+import Tour from './Tour'
+
 import { fetchFruits } from '../actions'
 
 function App() {
@@ -23,6 +25,7 @@ function App() {
         </ul>
         <div>
         <AboutUs/>
+        <Tour/>
         </div>
       </div>
     </>

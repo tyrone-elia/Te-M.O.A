@@ -10,7 +10,8 @@ body {
   background-color: $bg-main;
   color: $text-colour;
   font: 14px "Helvetica Neue", Helvetica, Arial, sans-serif;
-
+  
+ 
   // @include mobile {
   //   background-color: $bg-main;
   //   color: $text-colour;
@@ -19,15 +20,19 @@ body {
   @include desktop-large {
     background-color: aliceblue;
     color: black;
+
   }
 }
+
+img {
+  height: 600px;
+}
+
 p {
-  font-size: smaller;
+  font-size: medium;
   color: $text-colour;
   
-  img {
-    height: 400px;
-  }
+  
 }
 header {
   background-color: $bg-dark-dark;
