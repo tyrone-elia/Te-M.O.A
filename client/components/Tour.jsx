@@ -5,9 +5,10 @@ function tours () {
 
   return (
   <div>
- <p className="img" >
+ <span className="img" >
       <img src='/images/TeMoa3.png' alt='pic'/>
-    </p>
+      <img src='/images/TeMoa7.jpg' alt='pic'/>
+    </span>
   </div>
 
 )}

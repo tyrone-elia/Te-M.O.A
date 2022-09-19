@@ -5,31 +5,27 @@ import Header from './Header'
 import AboutUs from './AboutUs'
 import Tour from './Tour'
 
-import { fetchFruits } from '../actions'
+import { fetchTours } from '../actions'
 
 function App() {
-  const fruits = useSelector((state) => state.fruits)
+  const tours = useSelector((state) => state.tours)
   const dispatch = useDispatch()
   useEffect(() => {
-    dispatch(fetchFruits())
+    dispatch(fetchTours())
   }, [])
 
   return (
     <>
-      
         <Header/>
-        
         <AboutUs/>
         <div className="app">  
         <ul>
-          {fruits.map((fruit) => (
-            <li key={fruit}>{fruit}</li>
+          {tours.map((tour) => (
+            <li key={tour}>{tour}</li>
           ))}
         </ul>
-        <div>
-        <Tour/>
-        </div>
       </div>
+      <Tour/>
     </>
   )
 }

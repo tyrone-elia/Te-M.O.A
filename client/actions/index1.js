@@ -1,18 +1,18 @@
-import { getTours } from '../apis/tours'
+import { getFruits } from '../apis/fruits'
 
-export const SET_TOURS = 'SET_TOURS'
+export const SET_FRUITS = 'SET_FRUITS'
 
-export function setTours(tours) {
+export function setFruits(fruits) {
   return {
-    type: SET_TOURS,
-    payload: tours,
+    type: SET_FRUITS,
+    payload: fruits,
   }
 }
 
-export function fetchTours() {
+export function fetchFruits() {
   return (dispatch) => {
-    return getTours().then((tours) => {
-      dispatch(setTours(tours))
+    return getFruits().then((fruits) => {
+      dispatch(setFruits(fruits))
     })
   }
 }
