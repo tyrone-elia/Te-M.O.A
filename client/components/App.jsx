@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 
+import Header from './Header'
 import AboutUs from './AboutUs'
 import Tour from './Tour'
 
@@ -15,16 +16,17 @@ function App() {
 
   return (
     <>
-      <div className="app">
-        <h1>Te Mauri Ora Adventures</h1>
+      
+        <Header/>
         
+        <AboutUs/>
+        <div className="app">  
         <ul>
           {fruits.map((fruit) => (
             <li key={fruit}>{fruit}</li>
           ))}
         </ul>
         <div>
-        <AboutUs/>
         <Tour/>
         </div>
       </div>

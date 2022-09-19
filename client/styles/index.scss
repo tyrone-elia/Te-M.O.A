@@ -8,7 +8,7 @@ body {
   margin: 0;
   padding: 20px;
   background-color: $bg-main;
-  color: $text-colour;
+  color: $text-colour-light;
   font: 14px "Helvetica Neue", Helvetica, Arial, sans-serif;
   
  
@@ -25,17 +25,17 @@ body {
 }
 
 img {
-  height: 600px;
+  width: 100%;
 }
 
 p {
   font-size: medium;
-  color: $text-colour;
+  color: $text-colour-light;
   
   
 }
 header {
-  background-color: $bg-dark-dark;
+  background-color: $bg-mid-dark;
   position: absolute;
   top: 0;
   left: 0;
@@ -45,7 +45,7 @@ header {
   @include shadow();
 
   a {
-    color: $text-colour;
+    color: $text-colour-light;
   }
 
   
