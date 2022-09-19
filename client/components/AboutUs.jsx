@@ -24,17 +24,7 @@ return (
        <p>
         Based at The Queen Charlotte Tavern only 25 mintues from Picton, our aim is to transport people and promote local experiences to showcase our kiwi culture! Mauri Ora
       </p>
-    <h2>
-      Bus hire
-    </h2>
-    <h2>
-      Festival Tours!!
-    </h2>
-    <h2>
-      Range of day and multi day tours
-      </h2>
-   
-</div>
+  </div>
 
 )}
 
