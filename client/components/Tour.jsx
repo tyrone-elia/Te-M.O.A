@@ -4,6 +4,7 @@ function tours () {
 
 
   return (
+
   <div className="grid-container2">
     <span className="img" >
       <img src='/images/TeMoa3.jpg' alt='pic'/>

@@ -2,7 +2,7 @@
 @import './books.scss';
 
 header {
-  background-color: $bg-mid-dark;
+  background-color: $bg-mid;
   position: absolute;
   top: 0;
   left: 0;
@@ -44,8 +44,8 @@ body {
   }
 
   @include desktop-large {
-    background-color: aliceblue;
-    color: black;
+    background-color: $bg-mid;
+    color: $text-colour-light;
 
   }
 }
@@ -62,34 +62,141 @@ img {
   width: 100%;
 }
 
-.grid-container {
+// grid and flexbox settings
+
+// .item1 { grid-area: header; }
+// .item2 { grid-area: menu; }
+// .item3 { grid-area: main; }
+// .item4 { grid-area: right; }
+// .item5 { grid-area: footer; }
+// .item6 { grid-area: bottom; }
+
+.grid-container-showcase {
   display: grid;
-  grid-template-columns: 33% 33% 33%;
-  background-color: #090909;
+  // grid-template-areas:
+  // 'menu header right'
+  // 'menu footer right'
+  // 'main footer bottom';
+  background-color: $bg-Vio;
   padding: 10px;
+  gap: 10px;
+
+  .item1 {
+    grid-column: 1 ;
+    grid-row: 1 / span 2;
+  }
+  .item2 {
+    grid-column: 3;
+    grid-row: 1;
+  }
+  .item3 {
+    grid-column: 2;
+    grid-row: 2;
+  }
+  .item4 {
+    grid-column: 2;
+    grid-row: 1;
+  }
+  .item5 {
+    grid-column: 3;
+    grid-row: 2;
+  }
 }
+
+// feature - to have the images and videos rotate randomly
+// set to timed intervasl?
+
+.grid-container > div {
+  background-color: $bg-dark-dark;
+  text-align: center;
+  padding: 0 0;
+  font-size: 30px;
+}
+
 .grid-container2 {
   display: grid;
   grid-template-columns: 50% 50%;
-  background-color: #090909;
+  background-color: $bg-dark-dark;
   padding: 10px;
 }
 
+.grid-container-header {
+  display: grid;
+  // grid-template-areas:
+  //   'header header header header header header'
+  //   'menu main main main main right'
+  //   'menu footer footer footer footer right';
+  background-color: $bg-mid;
+  padding: 10px;
+  gap: 10px;
+  .item1 {
+    grid-column: 1 / span 3;
+    grid-row: 1;
+  }
+  .item2 {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  .item3 {
+    grid-column: 2 ;
+    grid-row: 2;
+  }
+  .item4 {
+    grid-column: 3 ;
+    grid-row: 2;
+  }
+  .item5 {
+    grid-column: 1 / span 3;
+    grid-row: 3;
+  }
+}
+
 .grid-item {
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: $bg-dark-dark;
   border: 1px solid rgba(0, 0, 0, 0.8);
   padding: 20px;
   font-size: 30px;
   text-align: center;
 }
+
+.flex-container {
+  display: flex;
+  background-color: $bg-dark-dark;
+}
+
+.flex-container > div {
+  background-color: $bg-dark-dark;
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px;
+
+  .item1 {
+    grid-column: 1 / span 2;
+    grid-row: 1;
+  }
+  .item2 {
+    grid-column: 3;
+    grid-row: 1 / span 2;
+  }
+  .item5 {
+    grid-column: 1 / span 3;
+    grid-row: 3;
+  }
+}
+
 .main {
   margin-top: 60px;
 }
 
-.img-lil {
-  width: 80%;
+.img70 {
+  width: 70%;
 }
 
-.img-tiny {
+.img50 {
   width: 50%
 }
+
+.img20 {
+  width: 20%
+}
+

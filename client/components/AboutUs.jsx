@@ -2,28 +2,30 @@ import React from "react"
 import Video from "./Video"
 
 
-
 function aboutUs () {
 
 return (
 <div>
-    <h4>
-      Te M.O.A was created through passion to promote and showcase our beautiful country, culture &amp; people.
-    </h4>
-    <div className="grid-container">
-      <div className="img">
-          <img src='/images/TeMoa5.jpg' alt='pic'/>
-      </div>
-      <div className="img-lil">
-          <img  src='/images/TeMoa8.jpg' alt='pic'/>
-      </div>
-      <div>
-        <Video/>
-      </div>
+    <div className="grid-container-showcase">
+      <div className="grid-item item1 img">
+          <img src='/images/TeMoa5.jpg' alt='truck-front'/>
+        </div>
+      <div className="grid-item item3 img50">
+          <img src='/images/Jed1.jpg' alt='our other dog mate Jethro or Jed'/>
+        </div>
+      <div className="grid-item item2 img50">
+          <img src='/images/TeMoa10.jpg' alt='truck side and mountain view'/>
+        </div>
+      <div className="grid-item item4">
+          <Video/>
+        </div>
+      <div className="grid-item item5 img70">
+          <img  src='/images/TeMoa8.jpg' alt='truck back side mountain snow'/>
+        </div>
     </div>
-       <p>
+      <h5>
         Based at The Queen Charlotte Tavern only 25 mintues from Picton, our aim is to transport people and promote local experiences to showcase our kiwi culture! Mauri Ora
-      </p>
+      </h5>
   </div>
 
 )}
